@@ -1,0 +1,13 @@
+.navLeftContainer{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.elementListNavLeft{
+    /* height: 6.25%; */
+    width: 55%;
+    aspect-ratio:1 / 1;
+    max-width: 64px;
+}

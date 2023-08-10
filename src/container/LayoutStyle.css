@@ -30,6 +30,8 @@
 .layoutPartGeneral{
     width: 91,88%;
     min-width:941px ;
+    display: flex;
+    flex: 1;
 }
 
 p{

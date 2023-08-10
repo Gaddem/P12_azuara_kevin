@@ -1,3 +1,19 @@
-/* .headerContainer{
+.headerContainer{
+    display: flex;
+    flex:1;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}
+.elementListHeader{
+    height: 67%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12%;
+}
 
-} */
+.logoHeader{
+    width: 12,36%;
+    margin-left:2%;
+}
