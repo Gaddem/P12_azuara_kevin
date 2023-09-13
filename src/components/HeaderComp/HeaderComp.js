@@ -7,7 +7,7 @@ const HeaderComp = () => {
     <nav className='headerContainer'>
       <img src={logo} alt="Logo" className='elementListHeader logoHeader'/>;
       <div className='elementListHeader'>
-        <p>Accueil</p>
+        <p >Accueil</p>
       </div>
       <div className='elementListHeader'>
         <p>Profil</p>

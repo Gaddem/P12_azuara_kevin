@@ -1,0 +1,11 @@
+.containerRightInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.containerRightInfo .childrenRightInfo{
+    width: 95%;
+    height: 15%;
+}

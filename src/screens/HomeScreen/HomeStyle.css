@@ -1,4 +1,7 @@
 .HS_container{
+    display: flex;
     flex: 1;
     background-color: white;
+    justify-content: center;
+    align-items: center;
 }

@@ -1,0 +1,47 @@
+.containerMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 85%;
+  height: 85%;
+}
+
+.subMainContainer {
+  display: flex;
+  flex-direction: row;
+  height: 85%;
+}
+.containUserInfo {
+  height: 12%;
+}
+
+.containRowRecharts {
+  display: flex;
+  flex-direction: row;
+  height: 50%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.containRowRecharts .childRechartRow {
+  display: flex;
+  height: 100%;
+  width: 30%;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.subLeftContainerMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 70%;
+  height: 100%;
+}
+
+.subRightContainerMain {
+  width: 20%;
+  height: 100%;
+  display: flex;
+}

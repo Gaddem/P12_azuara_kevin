@@ -1,10 +1,14 @@
 import './App.css';
 import LayoutContainer from "./container/LayoutContainer"
+import { ProviderContext } from './provider/Provider';
 
 function App() {
+
   return (
     <div className="App">
-      <LayoutContainer />
+      <ProviderContext>
+        <LayoutContainer />
+      </ProviderContext>
     </div>
   );
 }

@@ -1,13 +1,17 @@
-import React from 'react'
-import './HomeStyle.css'
+import React from "react";
+import "./HomeStyle.css";
+import { useProvider } from "../../provider/Provider";
+import ErrorComp from "../../components/ErrorComp/ErrorComp";
+import MainComp from "../../components/MainComps/MainComp";
 
 const HomeScreen = () => {
-  return (
-    <div className='HS_container'>
-        {/* HEADER */}
-        
-    </div>
-  )
-}
+  const { user } = useProvider();
 
-export default HomeScreen
+  return (
+    <div className="HS_container">
+      {user?.id ? <MainComp /> : <ErrorComp />}
+    </div>
+  );
+};
+
+export default HomeScreen;

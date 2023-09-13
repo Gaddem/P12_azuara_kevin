@@ -17,3 +17,7 @@
     width: 12,36%;
     margin-left:2%;
 }
+
+.elementListHeader > p {
+    color:white
+}

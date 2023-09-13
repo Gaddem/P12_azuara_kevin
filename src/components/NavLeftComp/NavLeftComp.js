@@ -9,10 +9,10 @@ import iconMsc from '../../img/msc-icon.png'
 const NavLeftComp = () => {
   return (
     <div className='navLeftContainer'>
-     <img src={iconYoga} alt="icone yoga" className='elementListNavLeft'/>;
-     <img src={iconSwim} alt="icone swim" className='elementListNavLeft'/>;
-     <img src={iconBike} alt="icone bike" className='elementListNavLeft'/>;
-     <img src={iconMsc} alt="icone musculutaion" className='elementListNavLeft'/>;
+     <img src={iconYoga} alt="icone yoga" className='elementListNavLeft'/>
+     <img src={iconSwim} alt="icone swim" className='elementListNavLeft'/>
+     <img src={iconBike} alt="icone bike" className='elementListNavLeft'/>
+     <img src={iconMsc} alt="icone musculutaion" className='elementListNavLeft'/>
 
     </div>
   )
