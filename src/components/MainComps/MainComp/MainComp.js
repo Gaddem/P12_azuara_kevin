@@ -15,12 +15,12 @@ const MainComp = () => {
       </div>
       <div className="subMainContainer">
         <div className="subLeftContainerMain">
-          <SBarChartComp />
-          <div className="containRowRecharts">
+          <SBarChartComp /> 
+           <div className="containRowRecharts">
             <SLineChartComp />
             <SRadarChartComp />
-            <SPieChartComp />
-          </div>
+             <SPieChartComp />
+          </div> 
         </div>
         <div className="subRightContainerMain">
           <RightInfoUserComp />

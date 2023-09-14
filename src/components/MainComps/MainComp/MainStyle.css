@@ -4,12 +4,15 @@
   justify-content: space-between;
   width: 85%;
   height: 85%;
+  /* background-color: teal; */
 }
 
 .subMainContainer {
   display: flex;
   flex-direction: row;
-  height: 85%;
+  justify-content: space-between;
+  height: 80%;
+  /* background-color: yellowgreen; */
 }
 .containUserInfo {
   height: 12%;
@@ -18,18 +21,17 @@
 .containRowRecharts {
   display: flex;
   flex-direction: row;
-  height: 50%;
+  height: 45%;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .containRowRecharts .childRechartRow {
-  display: flex;
+   display: flex;
   height: 100%;
-  width: 30%;
-  border-radius: 8px;
-  justify-content: center;
-  align-items: center;
+  width: 30%; 
+border-radius: 8px;
 }
 
 .subLeftContainerMain {
@@ -37,12 +39,12 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 70%;
+  width: 75%;
   height: 100%;
 }
 
 .subRightContainerMain {
-  width: 30%;
+  /* width: 30%; */
   height: 100%;
   display: flex;
 }

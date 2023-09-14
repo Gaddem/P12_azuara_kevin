@@ -36,49 +36,47 @@ const SLineChartComp = () => {
       className="childRechartRow"
       style={{
         background: "#FF0000",
-        justifyContent: "center",
-        alignItems: "flex-end",
-        margin: 10,
+        position: "relative",
       }}
     >
-      <ResponsiveContainer height='80%' width='100%'>
-      <LineChart
-        type="monotoneX"
-        data={data}
-        cursor="default"
-        margin={{
-          top: 15,
-          bottom: 5,
-        }}
-      >
-        <XAxis
-          tick={{ fill: "#ffffff", opacity: "50%" }}
-          strokeWidth={0}
-          dataKey="day"
-          // className="XAxisStyle"
-          // padding={{ left: 40, right: 40 }}
-          minTickGap={0}
-        />
-
-        <Tooltip cursor={false} content={<CustomTooltip />} dataKey={"trainingTime"} />
-
-        <Line
-          
+      <ResponsiveContainer height="80%" width="100%">
+        <LineChart
           type="monotoneX"
-          dataKey="trainingTime"
-          stroke="#FFFFFF"
-          strokeOpacity={"50%"}
-          strokeWidth={3}
-          dot={{ r: 0, strokeWidth: 0 }}
-          activeDot={{ r: 4, strokeWidth: 7, strokeOpacity: "50%" }}
-        />
-        {/* <CustomizedTitle text="Durée moyenne des sessions" /> */}
-        {/* <h1 className="LineChartTitle">Text</h1> */}
-     
-      </LineChart>
-   
+          data={data}
+          cursor="default"
+          margin={{
+            top: 15,
+            bottom: 5,
+          }}
+        >
+          <XAxis
+            tick={{ fill: "#ffffff", opacity: "50%" }}
+            strokeWidth={0}
+            dataKey="day"
+            // className="XAxisStyle"
+            // padding={{ left: 40, right: 40 }}
+            // minTickGap={0}
+          />
+
+          <Tooltip
+            cursor={false}
+            content={<CustomTooltip />}
+            dataKey={"trainingTime"}
+          />
+
+          <Line
+            type="monotoneX"
+            dataKey="trainingTime"
+            stroke="#FFFFFF"
+            strokeOpacity={"50%"}
+            strokeWidth={3}
+            dot={{ r: 0, strokeWidth: 0 }}
+            activeDot={{ r: 4, strokeWidth: 7, strokeOpacity: "50%" }}
+          />
+          {/* <CustomizedTitle text="Durée moyenne des sessions" /> */}
+          {/* <h1 className="LineChartTitle">Text</h1> */}
+        </LineChart>
       </ResponsiveContainer>
- 
     </div>
 
     // </ResponsiveContainer>
