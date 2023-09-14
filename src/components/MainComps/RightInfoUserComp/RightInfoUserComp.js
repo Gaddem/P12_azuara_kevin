@@ -1,7 +1,7 @@
 import React from "react";
-import { useProvider } from "../../provider/Provider";
+import { useProvider } from "../../../provider/Provider";
 import "./RightInfoUserStyle.css";
-import CardIconInfoComp from "./CardIconInfoComp/CardIconInfoComp";
+import CardIconInfoComp from "../CardIconInfoComp/CardIconInfoComp";
 
 const RightInfoUserComp = () => {
   const { user } = useProvider();

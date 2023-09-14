@@ -2,7 +2,7 @@ import React from "react";
 import "./HomeStyle.css";
 import { useProvider } from "../../provider/Provider";
 import ErrorComp from "../../components/ErrorComp/ErrorComp";
-import MainComp from "../../components/MainComps/MainComp";
+import MainComp from "../../components/MainComps/MainComp/MainComp";
 
 const HomeScreen = () => {
   const { user } = useProvider();

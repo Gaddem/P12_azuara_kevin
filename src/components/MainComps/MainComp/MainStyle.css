@@ -36,12 +36,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   width: 70%;
   height: 100%;
 }
 
 .subRightContainerMain {
-  width: 20%;
+  width: 30%;
   height: 100%;
   display: flex;
 }

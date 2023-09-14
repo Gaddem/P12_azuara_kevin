@@ -1,5 +1,5 @@
 import React from "react";
-import { useProvider } from "../../provider/Provider";
+import { useProvider } from "../../../provider/Provider";
 import './UserInfoStyle.css'
 
 const UserInfoComp = () => {

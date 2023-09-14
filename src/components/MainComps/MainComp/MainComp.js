@@ -1,11 +1,11 @@
 import React from "react";
 import "./MainStyle.css";
-import UserInfoComp from "./UserInfoComp";
-import RightInfoUserComp from "./RightInfoUserComp";
-import SLineChartComp from "../RechartComps/SLineChart/SLineChartComp";
-import SRadarChartComp from "../RechartComps/SRadarChart/SRadarChartComp";
-import SPieChartComp from "../RechartComps/SPieChart/SPieChartComp";
-import SBarChartComp from "../RechartComps/SBarChart/SBarChartComp";
+import UserInfoComp from "../UserInfoComp/UserInfoComp";
+import RightInfoUserComp from "../RightInfoUserComp/RightInfoUserComp";
+import SLineChartComp from "../../RechartComps/SLineChart/SLineChartComp";
+import SRadarChartComp from "../../RechartComps/SRadarChart/SRadarChartComp";
+import SPieChartComp from "../../RechartComps/SPieChart/SPieChartComp";
+import SBarChartComp from "../../RechartComps/SBarChart/SBarChartComp";
 
 const MainComp = () => {
   return (

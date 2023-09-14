@@ -1,11 +1,16 @@
 .containerRightInfo{
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    /* background-color: red; */
 }
 
 .containerRightInfo .childrenRightInfo{
+    display: flex;
     width: 95%;
     height: 15%;
+    max-width: 258px;
+    /* background-color: green; */
 }
