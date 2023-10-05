@@ -13,4 +13,4 @@ Rentrer la commande npm start
 
 Pour afficher les données d'un utilisateur ,nous récupérons les données de l'url pour obtenir l'id de l'utilisateur
 
-Si l'id n'existe pas une écran d'erreur s'affiche sinon lorsque l'id est présent , les données sont chargées dans un provider (context)
+Si l'id n'existe pas un écran d'erreur s'affiche sinon lorsque l'id est présent , les données sont chargées dans un provider (context)
