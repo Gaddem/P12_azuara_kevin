@@ -7,7 +7,7 @@ const UserInfoComp = () => {
 
   return (
     <div className="containerUserInfo">
-        <h1>Bonjour {user?.userInfos?.firstName}</h1>
+        <h1>Bonjour <span style={{color:"#FF0101"}}>{user?.userInfos?.firstName}</span></h1>
         <p>Félicitation ! Vous avez explosé vos objectifs hier 👏</p>
     </div>
   );

@@ -4,8 +4,8 @@ import UserInfoComp from "../UserInfoComp/UserInfoComp";
 import RightInfoUserComp from "../RightInfoUserComp/RightInfoUserComp";
 import SLineChartComp from "../../RechartComps/SLineChart/SLineChartComp";
 import SRadarChartComp from "../../RechartComps/SRadarChart/SRadarChartComp";
-import SPieChartComp from "../../RechartComps/SPieChart/SPieChartComp";
 import SBarChartComp from "../../RechartComps/SBarChart/SBarChartComp";
+import SRadialBarChartComp from "../../RechartComps/SRadialBarChart.js/SRadialBarChartComp";
 
 const MainComp = () => {
   return (
@@ -19,7 +19,7 @@ const MainComp = () => {
            <div className="containRowRecharts">
             <SLineChartComp />
             <SRadarChartComp />
-             <SPieChartComp />
+             <SRadialBarChartComp />
           </div> 
         </div>
         <div className="subRightContainerMain">

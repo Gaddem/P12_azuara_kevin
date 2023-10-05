@@ -28,7 +28,7 @@ const CardIconInfoComp = ({ type, countValue }) => {
     <div className="childrenRightInfo">
       <div className="subChildrenRightInfo">
         <div
-          style={{ backgroundColor: `rgba(${backgroundRGB}, 0.5)` }}
+          style={{ backgroundColor: `rgba(${backgroundRGB}, 0.1)` }}
           className="containerIconCardInfo"
         >
           <img src={src} alt="icone yoga" className="imgIconCardInfo" />

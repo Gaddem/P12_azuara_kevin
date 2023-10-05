@@ -5,17 +5,6 @@ import CardIconInfoComp from "../CardIconInfoComp/CardIconInfoComp";
 
 const RightInfoUserComp = () => {
   const { user } = useProvider();
-console.log(user.keyData);
-  //   keyData: {
-  //     calorieCount: 1930,
-  //     proteinCount: 155,
-  //     carbohydrateCount: 290,
-  //     lipidCount: 50
-  // }
-
- 
-
-
   return (
   <div className="containerRightInfo">
     <CardIconInfoComp countValue={user?.keyData?.calorieCount || 0} type={"Calories"} />

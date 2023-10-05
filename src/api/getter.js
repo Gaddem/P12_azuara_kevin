@@ -14,7 +14,18 @@ export const getUserById = async (userId) => {
 export const getActivityByUserId = async (userId) => {
   try {
     const response = await axios.get(`/user/${userId}/activity`);
-    return response.data;
+    let dataResponse=response.data
+    if(dataResponse.data.sessions){
+      let arraySessionNewDays =dataResponse.data.sessions?.map((session)=>{
+        let dateObj = new Date(session.day);
+        let theDay = dateObj.getUTCDate();
+        session.day =theDay.toString();
+        return session
+      }) 
+      dataResponse.sessions = arraySessionNewDays;
+    }
+
+    return dataResponse;
   } catch (error) {
     throw error;
   }
@@ -32,7 +43,35 @@ export const getAverageByUserId = async (userId) => {
 export const getPerfByUserId = async (userId) => {
   try {
     const response = await axios.get(`/user/${userId}/performance`);
-    return response.data;
+    let allKindTitleEng = response.data.data.kind;
+    // 1: 'cardio',
+    // 2: 'energy',
+    // 3: 'endurance',
+    // 4: 'strength',
+    // 5: 'speed',
+    // 6: 'intensity'
+    let allKindTitleFr = {
+      1:"Cardio",
+      2:"Energie",
+      3:"Endurance",
+      4:"Force",
+      5:"Vitesse",
+      6:"Intensité",
+
+
+    }
+    let allDetailData =response.data.data.data
+
+    let newArrayResponse = allDetailData.map((item)=>{
+        item.kind = allKindTitleFr[item.kind];
+        item.A= item.value;
+        delete item.value;
+        return item
+    });
+    let newResponse ={
+      data:newArrayResponse
+    }
+    return newResponse;
   } catch (error) {
     throw error;
   }

@@ -28,7 +28,6 @@ export const ProviderContext = ({ children }) => {
         }
         return;
     } catch (error) {
-        console.log(error);
         dechargeAllDataUser();
     }
     
@@ -53,7 +52,6 @@ export const ProviderContext = ({ children }) => {
             return;
         })
         .catch((e) => {
-          console.log(e);
           dechargeAllDataUser();
         });
       return;

@@ -13,7 +13,7 @@ const NavLeftComp = () => {
      <img src={iconSwim} alt="icone swim" className='elementListNavLeft'/>
      <img src={iconBike} alt="icone bike" className='elementListNavLeft'/>
      <img src={iconMsc} alt="icone musculutaion" className='elementListNavLeft'/>
-
+    <p className='titleVerticalNavLeft'>Copiryght, SportSee 2020</p>
     </div>
   )
 }
